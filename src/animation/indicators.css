@@ -1,0 +1,101 @@
+
+.indicators_block{
+   min-width:200px;
+    max-width: 220px;
+    background-color: lightblue;
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+    padding:5px;
+    gap:5px;
+}
+.indicators_block_portrait{
+    background-color:coral;
+    display:flex;
+    flex-direction:column;
+    gap:5px;
+}
+
+.portrait-photo{
+    background-color:yellow;
+    height:100%;
+
+}
+.portrait-XP{
+    background-color:yellow;
+    height:20px;
+    border-radius: 20%;
+}
+.portrait-infoblock{
+    display: flex;
+    gap:2px;
+}
+
+.portrait-info{
+    background-color: orange;
+
+}
+
+.portrait-info:hover{
+
+}
+
+
+[data-tooltip] {
+    position: relative; /* Относительное позиционирование */
+}
+[data-tooltip]::after {
+    content: attr(data-tooltip); /* Выводим текст */
+    position: absolute; /* Абсолютное позиционирование */
+    /*width: 300px; !* Ширина подсказки *!*/
+    left: 0; top: 0; /* Положение подсказки */
+    background: #3989c9; /* Синий цвет фона */
+    color: #fff; /* Цвет текста */
+    padding: 0.5em; /* Поля вокруг текста */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Параметры тени */
+    pointer-events: none; /* Подсказка */
+    opacity: 0; /* Подсказка невидима */
+    transition: 1s; /* Время появления подсказки */
+}
+[data-tooltip]:hover::after {
+    opacity: 1; /* Показываем подсказку */
+    top: 2em; /* Положение подсказки */
+}
+
+
+
+.indicators_block_acts{
+    background-color:coral;
+}
+
+.acts-name{
+    text-align:center;
+    background-color:yellow;
+}
+
+.acts-capabilities{
+    display:flex;
+    box-sizing: border-box;
+    justify-content: space-between;
+    padding:10px 15px;
+    gap:5px;
+    flex-wrap:wrap;
+    align-items: center;
+}
+
+.capability{
+    background-color:blue;
+    height:30px;
+    width:30px;
+}
+
+/*.capability_hover{*/
+/*    position: absolute;*/
+/*    background-color: white;*/
+/*    top:50px;*/
+/*    visibility: hidden;*/
+/*}*/
+
+/*.acts-capabilities:hover .capability_hover{*/
+/*    visibility: visible;*/
+/*}*/
+
